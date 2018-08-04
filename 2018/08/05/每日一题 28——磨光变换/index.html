@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>每日一题 | Math Daily</title>
+  <title>每日一题 28——磨光变换 | Math Daily</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="每日一题">
-<meta property="og:url" content="http://yoursite.com/每日一题/index.html">
+  <meta name="description" content="已知{x_i}\left( {i = 1,2,\cdot\cdot\cdot,n} \right)为1-n的一个排列，试求\sum\limits_{i = 1}^n { \left| {i - {x_i} } \right|}的最大值。">
+<meta name="keywords" content="不等式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="每日一题 28——磨光变换">
+<meta property="og:url" content="http://yoursite.com/2018/08/05/每日一题 28——磨光变换/index.html">
 <meta property="og:site_name" content="Math Daily">
+<meta property="og:description" content="已知{x_i}\left( {i = 1,2,\cdot\cdot\cdot,n} \right)为1-n的一个排列，试求\sum\limits_{i = 1}^n { \left| {i - {x_i} } \right|}的最大值。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-04T15:06:10.877Z">
+<meta property="og:updated_time" content="2018-08-04T16:15:54.122Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="每日一题">
+<meta name="twitter:title" content="每日一题 28——磨光变换">
+<meta name="twitter:description" content="已知{x_i}\left( {i = 1,2,\cdot\cdot\cdot,n} \right)为1-n的一个排列，试求\sum\limits_{i = 1}^n { \left| {i - {x_i} } \right|}的最大值。">
   
     <link rel="alternative" href="/atom.xml" title="Math Daily" type="application/atom+xml">
   
@@ -151,47 +155,151 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page  article-index" itemscope itemprop="blogPost">
+            <article id="post-每日一题 28——磨光变换" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/每日一题/index.html">每日一题</a>
+    <h1 class="article-title" itemprop="name">
+      每日一题 28——磨光变换
     </h1>
   
 
         
-        <a href="/每日一题/index.html" class="archive-article-date">
-  	<time datetime="2018-08-04T15:06:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-04</time>
+        <a href="/2018/08/05/每日一题 28——磨光变换/" class="archive-article-date">
+  	<time datetime="2018-08-04T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>已知<script type="math/tex">{x_i}\left( {i = 1,2,\cdot\cdot\cdot,n} \right)</script>为<script type="math/tex">1-n</script>的一个排列，试求<script type="math/tex">\sum\limits_{i = 1}^n { \left| {i - {x_i} } \right|}</script>的最大值。<br><a id="more"></a></p>
+<h3 id="讲解：此题由Math-Medivh编制并给出解答。"><a href="#讲解：此题由Math-Medivh编制并给出解答。" class="headerlink" title="讲解：此题由Math-Medivh编制并给出解答。"></a>讲解：此题由Math-Medivh编制并给出解答。</h3><p>事实上，该最大值为<script type="math/tex">\left[ {\frac{ { {n^2} } }{2} } \right]</script>，等号可以在<script type="math/tex">{x_i}</script>为<script type="math/tex">1-n</script>的倒序排列时成立，证明如下：<br>我们先介绍这样一个结论：对于<script type="math/tex">1 \le i < j \le n</script>与<script type="math/tex">1 \le {x_i} < {x_j} \le n</script>，将<script type="math/tex">{x_i}</script>与<script type="math/tex">{x_j}</script>调换位置后，<script type="math/tex">\sum\limits_{i = 1}^n {\left| { i - {x_i} } \right|}</script>不减。<br>欲证明这个结论，我们只需证明<script type="math/tex">\left| { i - {x_j} } \right| + \left| { j - {x_i} } \right| \ge \left| { i - {x_i} } \right| + \left| { j - {x_j} } \right|</script>，而对<script type="math/tex">i,j,{x_i},{x_j}</script>的大小关系进行分类讨论即可证明上式。<br>借助这一结论，经过有限次这样的变换，我们就证明了<script type="math/tex">\sum\limits_{i = 1}^n {\left| { i - {x_i} } \right|}</script>的最大值在<script type="math/tex">{x_i}</script>为<script type="math/tex">1-n</script>的倒序排列时可以取到。<br>综上，<script type="math/tex">\sum\limits_{i = 1}^n {\left| { i - {x_i} } \right|}</script>的最大值为<script type="math/tex">\left[ {\frac{ { {n^2} } }{2} } \right]</script>。</p>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢支持，Math-Medivh会继续努力<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">不等式</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/每日一题//" class="article-tag-list-link color5">每日一题</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/每日一题/index.html">展开全文 >></a>
-        </p>
-      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
 
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/05/每日一题 28——磨光变换/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/08/01/每日一题 24——指对不等式/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">每日一题 24——指对不等式</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -211,6 +319,25 @@
 
 
 
+  
+  
+  
+
+  
+  <div id="SOHUCS" sid="每日一题 28——磨光变换" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "true",
+        conf: "true"
+    });
+</script>
+</script>
+  
+
+  
+
+  
 
 
           </div>
@@ -233,7 +360,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
