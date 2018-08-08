@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>每日一题 28——磨光变换 | Math Daily</title>
+  <title>每日一题 1——交叉涂色 | Math Daily</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="已知{x_i}\left( {i = 1,2,\cdot\cdot\cdot,n} \right)为1-n的一个排列，试求\sum\limits_{i = 1}^n { \left| {i - {x_i} } \right|}的最大值。">
-<meta name="keywords" content="不等式">
+  <meta name="description" content="连接正n边形(n\geqslant 4)的中心与各个顶点形成n个全等三角形。用最多n-2种颜色为各三角形涂色，要求两个相邻的三角形不能同色，记共有涂色方法R_n种。试证明： R_n=(n-3)^n+(-1)^{n-2}(n-3)">
+<meta name="keywords" content="组合">
 <meta property="og:type" content="article">
-<meta property="og:title" content="每日一题 28——磨光变换">
-<meta property="og:url" content="http://yoursite.com/2018/08/05/每日一题 28——磨光变换/index.html">
+<meta property="og:title" content="每日一题 1——交叉涂色">
+<meta property="og:url" content="http://yoursite.com/2018/07/09/每日一题 1——交叉涂色/index.html">
 <meta property="og:site_name" content="Math Daily">
-<meta property="og:description" content="已知{x_i}\left( {i = 1,2,\cdot\cdot\cdot,n} \right)为1-n的一个排列，试求\sum\limits_{i = 1}^n { \left| {i - {x_i} } \right|}的最大值。">
+<meta property="og:description" content="连接正n边形(n\geqslant 4)的中心与各个顶点形成n个全等三角形。用最多n-2种颜色为各三角形涂色，要求两个相邻的三角形不能同色，记共有涂色方法R_n种。试证明： R_n=(n-3)^n+(-1)^{n-2}(n-3)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-05T12:54:51.620Z">
+<meta property="og:updated_time" content="2018-08-08T03:33:21.736Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="每日一题 28——磨光变换">
-<meta name="twitter:description" content="已知{x_i}\left( {i = 1,2,\cdot\cdot\cdot,n} \right)为1-n的一个排列，试求\sum\limits_{i = 1}^n { \left| {i - {x_i} } \right|}的最大值。">
+<meta name="twitter:title" content="每日一题 1——交叉涂色">
+<meta name="twitter:description" content="连接正n边形(n\geqslant 4)的中心与各个顶点形成n个全等三角形。用最多n-2种颜色为各三角形涂色，要求两个相邻的三角形不能同色，记共有涂色方法R_n种。试证明： R_n=(n-3)^n+(-1)^{n-2}(n-3)">
   
     <link rel="alternative" href="/atom.xml" title="Math Daily" type="application/atom+xml">
   
@@ -155,28 +155,37 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-每日一题 28——磨光变换" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-每日一题 1——交叉涂色" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      每日一题 28——磨光变换
+      每日一题 1——交叉涂色
     </h1>
   
 
         
-        <a href="/2018/08/05/每日一题 28——磨光变换/" class="archive-article-date">
-  	<time datetime="2018-08-04T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
+        <a href="/2018/07/09/每日一题 1——交叉涂色/" class="archive-article-date">
+  	<time datetime="2018-07-08T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>已知<script type="math/tex">{x_i}\left( {i = 1,2,\cdot\cdot\cdot,n} \right)</script>为<script type="math/tex">1-n</script>的一个排列，试求<script type="math/tex">\sum\limits_{i = 1}^n { \left| {i - {x_i} } \right|}</script>的最大值。<br><a id="more"></a></p>
-<h3 id="讲解：此题由Math-Medivh编制并给出解答。"><a href="#讲解：此题由Math-Medivh编制并给出解答。" class="headerlink" title="讲解：此题由Math-Medivh编制并给出解答。"></a>讲解：此题由Math-Medivh编制并给出解答。</h3><p>事实上，该最大值为<script type="math/tex">\left[ {\frac{ { {n^2} } }{2} } \right]</script>，等号可以在<script type="math/tex">{x_i}</script>为<script type="math/tex">1-n</script>的倒序排列时成立，证明如下：<br>我们先介绍这样一个结论：对于<script type="math/tex">1 \le i < j \le n</script>与<script type="math/tex">1 \le {x_i} < {x_j} \le n</script>，将<script type="math/tex">{x_i}</script>与<script type="math/tex">{x_j}</script>调换位置后，<script type="math/tex">\sum\limits_{i = 1}^n {\left| { i - {x_i} } \right|}</script>不减。<br>欲证明这个结论，我们只需证明<script type="math/tex">\left| { i - {x_j} } \right| + \left| { j - {x_i} } \right| \ge \left| { i - {x_i} } \right| + \left| { j - {x_j} } \right|</script>，而对<script type="math/tex">i,j,{x_i},{x_j}</script>的大小关系进行分类讨论即可证明上式。<br>借助这一结论，经过有限次这样的变换，我们就证明了<script type="math/tex">\sum\limits_{i = 1}^n {\left| { i - {x_i} } \right|}</script>的最大值在<script type="math/tex">{x_i}</script>为<script type="math/tex">1-n</script>的倒序排列时可以取到。<br>综上，<script type="math/tex">\sum\limits_{i = 1}^n {\left| { i - {x_i} } \right|}</script>的最大值为<script type="math/tex">\left[ {\frac{ { {n^2} } }{2} } \right]</script>。</p>
+        <p>连接正<script type="math/tex">n</script>边形<script type="math/tex">(n\geqslant 4)</script>的中心与各个顶点形成<script type="math/tex">n</script>个全等三角形。用最多<script type="math/tex">n-2</script>种颜色为各三角形涂色，要求两个相邻的三角形不能同色，记共有涂色方法<script type="math/tex">R_n</script>种。试证明：</p>
+<script type="math/tex; mode=display">R_n=(n-3)^n+(-1)^{n-2}(n-3)</script><a id="more"></a>
+<h3 id="讲解：此题由Math-Medivh编制并给出解答。"><a href="#讲解：此题由Math-Medivh编制并给出解答。" class="headerlink" title="讲解：此题由Math-Medivh编制并给出解答。"></a>讲解：此题由Math-Medivh编制并给出解答。</h3><p>首先，我们将这<script type="math/tex">n</script>个三角形顺时针依次标号<script type="math/tex">1 \sim n</script>.<br>记<script type="math/tex">a_k(k=2,3,4\cdots,n)</script>表示第<script type="math/tex">k</script>格与第1格颜色相同的概率，则<script type="math/tex">{a_2} = 0</script><br>记<script type="math/tex">b_k(k=2,3,4\cdots,n)</script>表示第<script type="math/tex">k</script>格与第1格颜色相异的概率，则<script type="math/tex">{b_2} = 1</script><br>那么，我们有：</p>
+<script type="math/tex; mode=display">\left\{ \begin{gathered}
+  {a_k} = \frac{1}{ {n - 3} }{b_{k - 1} } \hfill \\
+  {b_k} = 1 - {a_k} \hfill \\ 
+\end{gathered}  \right.(k \geqslant 3)</script><p>即</p>
+<script type="math/tex; mode=display">b_k=1-\dfrac{1}{n-3}b_{k-1}</script><p>可得</p>
+<script type="math/tex; mode=display">b_k-\dfrac{n-3}{n-2}=-\dfrac{1}{n-3}\left(b_{k-1}-\dfrac{n-3}{n-2}\right)</script><p>进而</p>
+<script type="math/tex; mode=display">b_k=\dfrac{1}{n-2}\left(-\dfrac{1}{n-3}\right)^{k-2}+\dfrac{n-3}{n-2}</script><p>则</p>
+<script type="math/tex; mode=display">R_n=(n-2)(n-3)^{n-1} \cdot b_n\</script><script type="math/tex; mode=display">=(n-3)^n+(-1)^{n-2}(n-3)</script><p>命题得证。</p>
 
       
 
@@ -211,7 +220,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">不等式</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">组合</a>
         		</li>
       		
 		</ul>
@@ -278,7 +287,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/05/每日一题 28——磨光变换/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/09/每日一题 1——交叉涂色/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -292,20 +301,15 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/08/06/每日一题 29——进阶错位相减/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/08/01/每日一题 24——指对不等式/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          每日一题 29——进阶错位相减
+          每日一题 24——指对不等式
         
       </div>
     </a>
   
-  
-    <a href="/2018/08/01/每日一题 24——指对不等式/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">每日一题 24——指对不等式</div>
-      <i class="icon-circle-right"></i>
-    </a>
   
 </nav>
 
@@ -333,7 +337,7 @@
   
 
   
-  <div id="SOHUCS" sid="每日一题 28——磨光变换" ></div> 
+  <div id="SOHUCS" sid="每日一题 1——交叉涂色" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
