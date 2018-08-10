@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>每日一题 28——磨光变换 | Math Daily</title>
+  <title>每日一题 34——最值处理 | Math Daily</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="已知{x_i}\left( {i = 1,2,\cdot\cdot\cdot,n} \right)为1-n的一个排列，试求\sum\limits_{i = 1}^n { \left| {i - {x_i} } \right|}的最大值。">
-<meta name="keywords" content="不等式">
+  <meta name="description" content="当x \in \left[ {\frac{3}{2},4} \right]时，\left| {a{x^2} + bx + 4a} \right| \leqslant 2x恒成立，求6a + b的最大值。">
+<meta name="keywords" content="函数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="每日一题 28——磨光变换">
-<meta property="og:url" content="http://yoursite.com/2018/08/05/每日一题 28——磨光变换/index.html">
+<meta property="og:title" content="每日一题 34——最值处理">
+<meta property="og:url" content="http://yoursite.com/2018/08/11/每日一题 34——最值处理/index.html">
 <meta property="og:site_name" content="Math Daily">
-<meta property="og:description" content="已知{x_i}\left( {i = 1,2,\cdot\cdot\cdot,n} \right)为1-n的一个排列，试求\sum\limits_{i = 1}^n { \left| {i - {x_i} } \right|}的最大值。">
+<meta property="og:description" content="当x \in \left[ {\frac{3}{2},4} \right]时，\left| {a{x^2} + bx + 4a} \right| \leqslant 2x恒成立，求6a + b的最大值。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-05T12:54:51.620Z">
+<meta property="og:updated_time" content="2018-08-10T22:12:51.385Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="每日一题 28——磨光变换">
-<meta name="twitter:description" content="已知{x_i}\left( {i = 1,2,\cdot\cdot\cdot,n} \right)为1-n的一个排列，试求\sum\limits_{i = 1}^n { \left| {i - {x_i} } \right|}的最大值。">
+<meta name="twitter:title" content="每日一题 34——最值处理">
+<meta name="twitter:description" content="当x \in \left[ {\frac{3}{2},4} \right]时，\left| {a{x^2} + bx + 4a} \right| \leqslant 2x恒成立，求6a + b的最大值。">
   
     <link rel="alternative" href="/atom.xml" title="Math Daily" type="application/atom+xml">
   
@@ -149,28 +149,40 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-每日一题 28——磨光变换" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-每日一题 34——最值处理" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      每日一题 28——磨光变换
+      每日一题 34——最值处理
     </h1>
   
 
         
-        <a href="/2018/08/05/每日一题 28——磨光变换/" class="archive-article-date">
-  	<time datetime="2018-08-04T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-05</time>
+        <a href="/2018/08/11/每日一题 34——最值处理/" class="archive-article-date">
+  	<time datetime="2018-08-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>已知<script type="math/tex">{x_i}\left( {i = 1,2,\cdot\cdot\cdot,n} \right)</script>为<script type="math/tex">1-n</script>的一个排列，试求<script type="math/tex">\sum\limits_{i = 1}^n { \left| {i - {x_i} } \right|}</script>的最大值。<br><a id="more"></a></p>
-<h3 id="讲解：此题由Math-Medivh编制并给出解答。"><a href="#讲解：此题由Math-Medivh编制并给出解答。" class="headerlink" title="讲解：此题由Math-Medivh编制并给出解答。"></a>讲解：此题由Math-Medivh编制并给出解答。</h3><p>事实上，该最大值为<script type="math/tex">\left[ {\frac{ { {n^2} } }{2} } \right]</script>，等号可以在<script type="math/tex">{x_i}</script>为<script type="math/tex">1-n</script>的倒序排列时成立，证明如下：<br>我们先介绍这样一个结论：对于<script type="math/tex">1 \le i < j \le n</script>与<script type="math/tex">1 \le {x_i} < {x_j} \le n</script>，将<script type="math/tex">{x_i}</script>与<script type="math/tex">{x_j}</script>调换位置后，<script type="math/tex">\sum\limits_{i = 1}^n {\left| { i - {x_i} } \right|}</script>不减。<br>欲证明这个结论，我们只需证明<script type="math/tex">\left| { i - {x_j} } \right| + \left| { j - {x_i} } \right| \ge \left| { i - {x_i} } \right| + \left| { j - {x_j} } \right|</script>，而对<script type="math/tex">i,j,{x_i},{x_j}</script>的大小关系进行分类讨论即可证明上式。<br>借助这一结论，经过有限次这样的变换，我们就证明了<script type="math/tex">\sum\limits_{i = 1}^n {\left| { i - {x_i} } \right|}</script>的最大值在<script type="math/tex">{x_i}</script>为<script type="math/tex">1-n</script>的倒序排列时可以取到。<br>综上，<script type="math/tex">\sum\limits_{i = 1}^n {\left| { i - {x_i} } \right|}</script>的最大值为<script type="math/tex">\left[ {\frac{ { {n^2} } }{2} } \right]</script>。</p>
+        <p>当<script type="math/tex">x \in \left[ {\frac{3}{2},4} \right]</script>时，<script type="math/tex">\left| {a{x^2} + bx + 4a} \right| \leqslant 2x</script>恒成立，求<script type="math/tex">6a + b</script>的最大值。<br><a id="more"></a></p>
+<h3 id="讲解：此题的解答由Math-Medivh提供。"><a href="#讲解：此题的解答由Math-Medivh提供。" class="headerlink" title="讲解：此题的解答由Math-Medivh提供。"></a>讲解：此题的解答由Math-Medivh提供。</h3><p>令<script type="math/tex">f\left( x \right) = ax + \frac{ {4a} }{x} + b</script>，即<script type="math/tex">\left| {f\left( x \right)} \right| \leqslant 2</script>在<script type="math/tex">\left[ {\frac{3}{2},4} \right]</script>上恒成立。<br>当<script type="math/tex">a < 0</script>时，只需将<script type="math/tex">\left| {ax + \frac{ {4a} }{x} + b} \right| \leqslant 2</script>写为<script type="math/tex">\left| { - ax - \frac{ {4a} }{x} - b} \right| \leqslant 2</script>即可归结为<script type="math/tex">a > 0</script>的情形。<br>故只需考虑<script type="math/tex">a > 0</script>与<script type="math/tex">a = 0</script>的情况。<br>$\left( { {1^ \circ } } \right)$ 当<script type="math/tex">a = 0</script>时，有</p>
+<script type="math/tex; mode=display">\left| {f\left( x \right)} \right| = \left| b \right| \leqslant 2</script><p>故</p>
+<script type="math/tex; mode=display">6a + b = b \leqslant \left| b \right| \leqslant 2</script><p>$\left( { {2^ \circ } } \right)$ 当<script type="math/tex">a = 0</script>时，只需</p>
+<script type="math/tex; mode=display">\left\{ \begin{gathered}
+  f\left( 2 \right) = \left| {4a + b} \right| \leqslant 2 \hfill \\
+  f\left( 4 \right) = \left| {5a + b} \right| \leqslant 2 \hfill \\
+  f\left( {\frac{3}{2} } \right) = \left| {\frac{ {25} }{6}a + b} \right| \leqslant 2 \hfill \\ 
+\end{gathered}  \right.</script><p>即</p>
+<script type="math/tex; mode=display">\left\{ \begin{gathered}
+   - 2 \leqslant 5a + b \leqslant 2 \hfill \\
+   - 2 \leqslant  - \left( {4a + b} \right) \leqslant 2 \hfill \\ 
+\end{gathered}  \right.</script><p>于是有，<script type="math/tex">- 4 \leqslant a \leqslant 4</script><br>故<script type="math/tex">- 6 \leqslant 6a + b \leqslant 6</script><br>所以，<script type="math/tex">6a + b</script>的最大值为6，此时存在</p>
+<script type="math/tex; mode=display">\left| {4{x^2} - 18x + 16} \right| \leqslant 2x</script><p>在<script type="math/tex">\left[ {\frac{3}{2},4} \right]</script>上恒成立。</p>
 
       
 
@@ -205,7 +217,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">不等式</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">函数</a>
         		</li>
       		
 		</ul>
@@ -272,7 +284,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/05/每日一题 28——磨光变换/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/11/每日一题 34——最值处理/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -286,18 +298,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/08/06/每日一题 29——进阶错位相减/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          每日一题 29——进阶错位相减
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/08/01/每日一题 24——指对不等式/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">每日一题 24——指对不等式</div>
+    <a href="/2018/08/10/每日一题 33——复数方法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">每日一题 33——复数方法</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -327,7 +330,7 @@
   
 
   
-  <div id="SOHUCS" sid="每日一题 28——磨光变换" ></div> 
+  <div id="SOHUCS" sid="每日一题 34——最值处理" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
