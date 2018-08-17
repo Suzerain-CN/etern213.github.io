@@ -7,15 +7,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 平面几何 | Math Daily</title>
+  <title>每日一题 41——巧妙裂项 | Math Daily</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Math Daily">
-<meta property="og:url" content="http://yoursite.com/tags/平面几何/index.html">
+  <meta name="description" content="设{\left( {1 - x} \right)^n} = \sum\limits_{i = 0}^n { {a_i}{x^i} }，n \in {N^*}，n \geqslant 2，{b_k} = \frac{ {k + 1} }{ {n - k} }{a_{k + 1} }(k \in N,k \leqslant n - 1)，{S_m} = \sum\limits_{i = 0}^m {">
+<meta name="keywords" content="组合">
+<meta property="og:type" content="article">
+<meta property="og:title" content="每日一题 41——巧妙裂项">
+<meta property="og:url" content="http://yoursite.com/2018/08/18/每日一题 41——巧妙裂项/index.html">
 <meta property="og:site_name" content="Math Daily">
+<meta property="og:description" content="设{\left( {1 - x} \right)^n} = \sum\limits_{i = 0}^n { {a_i}{x^i} }，n \in {N^*}，n \geqslant 2，{b_k} = \frac{ {k + 1} }{ {n - k} }{a_{k + 1} }(k \in N,k \leqslant n - 1)，{S_m} = \sum\limits_{i = 0}^m {">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-08-17T13:55:00.980Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Math Daily">
+<meta name="twitter:title" content="每日一题 41——巧妙裂项">
+<meta name="twitter:description" content="设{\left( {1 - x} \right)^n} = \sum\limits_{i = 0}^n { {a_i}{x^i} }，n \in {N^*}，n \geqslant 2，{b_k} = \frac{ {k + 1} }{ {n - k} }{a_{k + 1} }(k \in N,k \leqslant n - 1)，{S_m} = \sum\limits_{i = 0}^m {">
   
     <link rel="alternative" href="/atom.xml" title="Math Daily" type="application/atom+xml">
   
@@ -145,48 +150,77 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-每日一题 41——巧妙裂项" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/10/每日一题 33——复数方法/" class="archive-article-date">
-  	<time datetime="2018-08-09T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/10/每日一题 33——复数方法/">每日一题 33——复数方法</a>
+    <h1 class="article-title" itemprop="name">
+      每日一题 41——巧妙裂项
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/08/18/每日一题 41——巧妙裂项/" class="archive-article-date">
+  	<time datetime="2018-08-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>设<script type="math/tex">{\left( {1 - x} \right)^n} = \sum\limits_{i = 0}^n { {a_i}{x^i} }</script>，<script type="math/tex">n \in {N^*}</script>，<script type="math/tex">n \geqslant 2</script>，<script type="math/tex">{b_k} = \frac{ {k + 1} }{ {n - k} }{a_{k + 1} }(k \in N,k \leqslant n - 1)</script>，<script type="math/tex">{S_m} = \sum\limits_{i = 0}^m { {b_i} } (m \in N,m \leqslant n - 1)</script>，求<script type="math/tex">\left| {\frac{ { {S_m} } }{ {C_{n - 1}^m} } } \right|</script>的值。<br><a id="more"></a></p>
+<h3 id="讲解：此题由Math-Medivh摘录。"><a href="#讲解：此题由Math-Medivh摘录。" class="headerlink" title="讲解：此题由Math-Medivh摘录。"></a>讲解：此题由Math-Medivh摘录。</h3><p>注意到：</p>
+<script type="math/tex; mode=display">{b_k} = \frac{ {k + 1} }{ {n - k} }{a_{k + 1} } = {\left( { - 1} \right)^{k + 1} } \cdot \frac{ {k + 1} }{ {n - k} }C_n^{k + 1} = {\left( { - 1} \right)^{k + 1} }C_n^k</script><p>当<script type="math/tex">1 \leqslant k \leqslant n - 1</script>时，</p>
+<script type="math/tex; mode=display">\begin{gathered}
+  {b_k} = {\left( { - 1} \right)^{k + 1}}C_n^k = {\left( { - 1} \right)^{k + 1} } \cdot (C_{n - 1}^k + C_{n - 1}^{k - 1}) \hfill \\
+   = {\left( { - 1} \right)^{k + 1} }C_{n - 1}^{k - 1} + {\left( { - 1} \right)^{k + 1}}C_{n - 1}^k \hfill \\
+   = {\left( { - 1} \right)^{k - 1}}C_{n - 1}^{k - 1} - {\left( { - 1} \right)^k}C_{n - 1}^k \hfill \\ 
+\end{gathered}</script><p>当<script type="math/tex">m = 0</script>时，有</p>
+<script type="math/tex; mode=display">\left| {\frac{ { {S_m} } }{ {C_{n - 1}^m} } } \right| = \left| {\frac{ { {b_0} } }{ {C_{n - 1}^0} } } \right| = 1</script><p>当<script type="math/tex">1 \leqslant m \leqslant n - 1</script>时，有</p>
+<script type="math/tex; mode=display">{S_m} =  - 1 + \sum\limits_{k = 1}^m [ {\left( { - 1} \right)^{k - 1}}C_{n - 1}^{k - 1} - {\left( { - 1} \right)^k}C_{n - 1}^k] =  - {\left( { - 1} \right)^m}C_{n - 1}^m</script><p>所以<script type="math/tex">\left| {\frac{ { {S_m} } }{ {C_{n - 1}^m} } } \right| = 1</script><br>命题得证。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢支持，Math-Medivh会继续努力<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">平面几何</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">组合</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -199,17 +233,114 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/18/每日一题 41——巧妙裂项/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/08/17/每日一题 40——最大四面体/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">每日一题 40——最大四面体</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+  <div id="SOHUCS" sid="每日一题 41——巧妙裂项" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "true",
+        conf: "true"
+    });
+</script>
+</script>
+  
+
+  
+
+  
 
 
           </div>
@@ -232,9 +363,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
