@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="Math Daily">
 <meta property="og:description" content="连接正n边形(n\geqslant 4)的中心与各个顶点形成n个全等三角形。用最多n-2种颜色为各三角形涂色，要求两个相邻的三角形不能同色，记共有涂色方法R_n种。试证明： R_n=(n-3)^n+(-1)^{n-2}(n-3)">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-08T03:33:21.736Z">
+<meta property="og:updated_time" content="2018-08-18T12:58:53.486Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="每日一题 1——交叉涂色">
 <meta name="twitter:description" content="连接正n边形(n\geqslant 4)的中心与各个顶点形成n个全等三角形。用最多n-2种颜色为各三角形涂色，要求两个相邻的三角形不能同色，记共有涂色方法R_n种。试证明： R_n=(n-3)^n+(-1)^{n-2}(n-3)">
@@ -180,7 +180,10 @@
 <script type="math/tex; mode=display">b_k=1-\dfrac{1}{n-3}b_{k-1}</script><p>可得</p>
 <script type="math/tex; mode=display">b_k-\dfrac{n-3}{n-2}=-\dfrac{1}{n-3}\left(b_{k-1}-\dfrac{n-3}{n-2}\right)</script><p>进而</p>
 <script type="math/tex; mode=display">b_k=\dfrac{1}{n-2}\left(-\dfrac{1}{n-3}\right)^{k-2}+\dfrac{n-3}{n-2}</script><p>则</p>
-<script type="math/tex; mode=display">R_n=(n-2)(n-3)^{n-1} \cdot b_n\</script><script type="math/tex; mode=display">=(n-3)^n+(-1)^{n-2}(n-3)</script><p>命题得证。</p>
+<script type="math/tex; mode=display">\begin{gathered}
+  {R_n} &=& (n - 2){(n - 3)^{n - 1}} \cdot {b_n}\; \hfill \\
+   &=& {(n - 3)^n} + {( - 1)^{n - 2}}(n - 3) \hfill \\ 
+\end{gathered}</script><p>命题得证。</p>
 
       
 
