@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="Math Daily">
 <meta property="og:description" content="设数列\left\{ { {x_n} } \right\}满足{x_1} = 1，{x_{n + 1} } = 4{x_n} + \left[ {\sqrt {11} {x_n} } \right]，求{x_{2012} }的个位数字。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-20T14:38:03.860Z">
+<meta property="og:updated_time" content="2018-08-22T11:15:07.650Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="每日一题 44——最终数字">
 <meta name="twitter:description" content="设数列\left\{ { {x_n} } \right\}满足{x_1} = 1，{x_{n + 1} } = 4{x_n} + \left[ {\sqrt {11} {x_n} } \right]，求{x_{2012} }的个位数字。">
@@ -172,11 +172,11 @@
       
         <p>设数列<script type="math/tex">\left\{ { {x_n} } \right\}</script>满足<script type="math/tex">{x_1} = 1</script>，<script type="math/tex">{x_{n + 1} } = 4{x_n} + \left[ {\sqrt {11} {x_n} } \right]</script>，求<script type="math/tex">{x_{2012} }</script>的个位数字。<br><a id="more"></a></p>
 <h3 id="讲解：此题的解答由Math-Medivh提供。"><a href="#讲解：此题的解答由Math-Medivh提供。" class="headerlink" title="讲解：此题的解答由Math-Medivh提供。"></a>讲解：此题的解答由Math-Medivh提供。</h3><p>不难得到</p>
-<script type="math/tex; mode=display">4{x_n} + \sqrt {11} {x_n} < {x_{n + 1} } < 4{x_n} + \sqrt {11} {x_n} + 1</script><p>故</p>
-<script type="math/tex; mode=display">5{x_n} < (4 - \sqrt {11} ){x_{n + 1} } < 5{x_n} + 4 - \sqrt {11}</script><p>从而</p>
-<script type="math/tex; mode=display">4{x_{n + 1} } - 5{x_n} + \sqrt {11}  - 4 < \sqrt {11} {x_{n + 1} } < 4{x_{n + 1} } - 5{x_n}</script><p>因此</p>
-<script type="math/tex; mode=display">\left[ {\sqrt {11} {x_n} } \right] = 4{x_n} - 5{x_{n - 1} } - 1</script><p>结合题意，就有</p>
-<script type="math/tex; mode=display">{x_{n + 1} } = 8{x_n} - 5{x_{n - 1} } - 1</script><p>接下来寻找规律就可得到<script type="math/tex">{x_{2012}}</script>的个位数字为<script type="math/tex">4</script>。</p>
+<script type="math/tex; mode=display">4{x_n} + \sqrt {11} {x_n} - 1< {x_{n + 1} } < 4{x_n} + \sqrt {11} {x_n}</script><p>故</p>
+<script type="math/tex; mode=display">5{x_n} - （4 - \sqrt {11}）< (4 - \sqrt {11} ){x_{n + 1} } < 5{x_n}</script><p>从而</p>
+<script type="math/tex; mode=display">4{x_{n + 1} } - 5{x_n} < \sqrt {11} {x_{n + 1} } < 4{x_{n + 1} } - 5{x_n} + 4 - \sqrt {11}</script><p>因此</p>
+<script type="math/tex; mode=display">\left[ {\sqrt {11} {x_n} } \right] = 4{x_n} - 5{x_{n - 1} }</script><p>结合题意，就有</p>
+<script type="math/tex; mode=display">{x_{n + 1} } = 8{x_n} - 5{x_{n - 1} }</script><p>接下来寻找规律就可得到<script type="math/tex">{x_{2012}}</script>的个位数字为<script type="math/tex">3</script>。</p>
 
       
 
