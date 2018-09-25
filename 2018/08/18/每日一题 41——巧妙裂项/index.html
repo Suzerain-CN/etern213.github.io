@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="Math Daily">
 <meta property="og:description" content="设{\left( {1 - x} \right)^n} = \sum\limits_{i = 0}^n { {a_i}{x^i} }，n \in {N^*}，n \geqslant 2，{b_k} = \frac{ {k + 1} }{ {n - k} }{a_{k + 1} }(k \in N,k \leqslant n - 1)，{S_m} = \sum\limits_{i = 0}^m {">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-17T13:55:00.980Z">
+<meta property="og:updated_time" content="2018-09-25T15:46:14.130Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="每日一题 41——巧妙裂项">
 <meta name="twitter:description" content="设{\left( {1 - x} \right)^n} = \sum\limits_{i = 0}^n { {a_i}{x^i} }，n \in {N^*}，n \geqslant 2，{b_k} = \frac{ {k + 1} }{ {n - k} }{a_{k + 1} }(k \in N,k \leqslant n - 1)，{S_m} = \sum\limits_{i = 0}^m {">
@@ -173,11 +173,11 @@
         <p>设<script type="math/tex">{\left( {1 - x} \right)^n} = \sum\limits_{i = 0}^n { {a_i}{x^i} }</script>，<script type="math/tex">n \in {N^*}</script>，<script type="math/tex">n \geqslant 2</script>，<script type="math/tex">{b_k} = \frac{ {k + 1} }{ {n - k} }{a_{k + 1} }(k \in N,k \leqslant n - 1)</script>，<script type="math/tex">{S_m} = \sum\limits_{i = 0}^m { {b_i} } (m \in N,m \leqslant n - 1)</script>，求<script type="math/tex">\left| {\frac{ { {S_m} } }{ {C_{n - 1}^m} } } \right|</script>的值。<br><a id="more"></a></p>
 <h3 id="讲解：此题由Math-Medivh摘录。"><a href="#讲解：此题由Math-Medivh摘录。" class="headerlink" title="讲解：此题由Math-Medivh摘录。"></a>讲解：此题由Math-Medivh摘录。</h3><p>注意到：</p>
 <script type="math/tex; mode=display">{b_k} = \frac{ {k + 1} }{ {n - k} }{a_{k + 1} } = {\left( { - 1} \right)^{k + 1} } \cdot \frac{ {k + 1} }{ {n - k} }C_n^{k + 1} = {\left( { - 1} \right)^{k + 1} }C_n^k</script><p>当<script type="math/tex">1 \leqslant k \leqslant n - 1</script>时，</p>
-<script type="math/tex; mode=display">\begin{gathered}
-  {b_k} = {\left( { - 1} \right)^{k + 1}}C_n^k = {\left( { - 1} \right)^{k + 1} } \cdot (C_{n - 1}^k + C_{n - 1}^{k - 1}) \hfill \\
-   = {\left( { - 1} \right)^{k + 1} }C_{n - 1}^{k - 1} + {\left( { - 1} \right)^{k + 1}}C_{n - 1}^k \hfill \\
-   = {\left( { - 1} \right)^{k - 1}}C_{n - 1}^{k - 1} - {\left( { - 1} \right)^k}C_{n - 1}^k \hfill \\ 
-\end{gathered}</script><p>当<script type="math/tex">m = 0</script>时，有</p>
+<script type="math/tex; mode=display">\begin{align}
+  {b_k} = {\left( { - 1} \right)^{k + 1}}C_n^k &= {\left( { - 1} \right)^{k + 1} } \cdot (C_{n - 1}^k + C_{n - 1}^{k - 1})  \\
+   &= {\left( { - 1} \right)^{k + 1} }C_{n - 1}^{k - 1} + {\left( { - 1} \right)^{k + 1}}C_{n - 1}^k  \\
+   &= {\left( { - 1} \right)^{k - 1}}C_{n - 1}^{k - 1} - {\left( { - 1} \right)^k}C_{n - 1}^k  \\ 
+\end{align}</script><p>当<script type="math/tex">m = 0</script>时，有</p>
 <script type="math/tex; mode=display">\left| {\frac{ { {S_m} } }{ {C_{n - 1}^m} } } \right| = \left| {\frac{ { {b_0} } }{ {C_{n - 1}^0} } } \right| = 1</script><p>当<script type="math/tex">1 \leqslant m \leqslant n - 1</script>时，有</p>
 <script type="math/tex; mode=display">{S_m} =  - 1 + \sum\limits_{k = 1}^m [ {\left( { - 1} \right)^{k - 1}}C_{n - 1}^{k - 1} - {\left( { - 1} \right)^k}C_{n - 1}^k] =  - {\left( { - 1} \right)^m}C_{n - 1}^m</script><p>所以<script type="math/tex">\left| {\frac{ { {S_m} } }{ {C_{n - 1}^m} } } \right| = 1</script><br>命题得证。</p>
 
@@ -470,15 +470,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">向量</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">集合</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">逻辑</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">向量</a>
               </li>
              
               <li class="article-tag-list-item">

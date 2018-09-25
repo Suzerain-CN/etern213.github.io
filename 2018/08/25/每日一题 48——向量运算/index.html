@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="Math Daily">
 <meta property="og:description" content="在四边形ABCD中，点E，F分别为边AD，BC的中点，设\mathop {AD}\limits^ \to   \cdot \mathop {BC}\limits^ \to   = m，\mathop {AC}\limits^ \to   \cdot \mathop {BD}\limits^ \to   = n。若AB = \sqrt 2，EF = 1，CD = \sqrt 3，求n - m的值。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-24T22:55:33.460Z">
+<meta property="og:updated_time" content="2018-09-25T15:49:49.407Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="每日一题 48——向量运算">
 <meta name="twitter:description" content="在四边形ABCD中，点E，F分别为边AD，BC的中点，设\mathop {AD}\limits^ \to   \cdot \mathop {BC}\limits^ \to   = m，\mathop {AC}\limits^ \to   \cdot \mathop {BD}\limits^ \to   = n。若AB = \sqrt 2，EF = 1，CD = \sqrt 3，求n - m的值。">
@@ -172,23 +172,23 @@
       
         <p>在四边形<script type="math/tex">ABCD</script>中，点<script type="math/tex">E</script>，<script type="math/tex">F</script>分别为边<script type="math/tex">AD</script>，<script type="math/tex">BC</script>的中点，设<script type="math/tex">\mathop {AD}\limits^ \to   \cdot \mathop {BC}\limits^ \to   = m</script>，<script type="math/tex">\mathop {AC}\limits^ \to   \cdot \mathop {BD}\limits^ \to   = n</script>。若<script type="math/tex">AB = \sqrt 2</script>，<script type="math/tex">EF = 1</script>，<script type="math/tex">CD = \sqrt 3</script>，求<script type="math/tex">n - m</script>的值。<br><a id="more"></a></p>
 <h3 id="讲解：此题的解答由Math-Medivh提供。"><a href="#讲解：此题的解答由Math-Medivh提供。" class="headerlink" title="讲解：此题的解答由Math-Medivh提供。"></a>讲解：此题的解答由Math-Medivh提供。</h3><p>考虑到</p>
-<script type="math/tex; mode=display">\begin{array}{l}
-\mathop {C{D^2}}\limits^ \to   - \mathop {B{A^2}}\limits^ \to   &=& 1\\
- &=& 2\mathop {CF}\limits^ \to   \cdot \mathop {FE}\limits^ \to   - 2\mathop {BF}\limits^ \to   \cdot \mathop {FE}\limits^ \to   + 2\mathop {FE}\limits^ \to   \cdot \mathop {ED}\limits^ \to   - 2\mathop {FE}\limits^ \to   \cdot \mathop {EA}\limits^ \to  \\
- &=& 4\mathop {FE}\limits^ \to  (\mathop {CF}\limits^ \to   + \mathop {ED}\limits^ \to  )
-\end{array}</script><p>即</p>
-<script type="math/tex; mode=display">\begin{gathered}
-  \mathop {FE}\limits^ \to   \cdot (\mathop {CF}\limits^ \to   + \mathop {ED}\limits^ \to  ) &=& \mathop {FE}\limits^ \to   \cdot (\mathop {CD}\limits^ \to   + \mathop {EF}\limits^ \to  ) \hfill \\
-   &=& \mathop {FE}\limits^ \to   \cdot \mathop {CD}\limits^ \to   - 1 \hfill \\
-   &=& \frac{1}{4} \hfill \\ 
-\end{gathered}</script><p>从而<script type="math/tex">\mathop {FE}\limits^ \to   \cdot \mathop {CD}\limits^ \to   = \frac{5}{4}</script><br>又</p>
-<script type="math/tex; mode=display">\begin{array}{l}
-\mathop {AC}\limits^ \to   \cdot \mathop {BD}\limits^ \to   &=& n\\
- &=& (\mathop {AD}\limits^ \to   + \mathop {DC}\limits^ \to  )(\mathop {BC}\limits^ \to   + \mathop {CD}\limits^ \to  )\\
- &=& m + (\mathop {AD}\limits^ \to   - \mathop {BC}\limits^ \to  ) \cdot \mathop {CD}\limits^ \to   - 3\\
- &=& m - 3 + 2(\mathop {EF}\limits^ \to   + \mathop {CD}\limits^ \to  ) \cdot \mathop {CD}\limits^ \to  \\
- &=& m + \frac{1}{2}
-\end{array}</script><p>所以<script type="math/tex">n - m = \frac{1}{2}</script></p>
+<script type="math/tex; mode=display">\begin{align}
+\mathop {C{D^2}}\limits^ \to   - \mathop {B{A^2}}\limits^ \to   &= 1\\
+ &= 2\mathop {CF}\limits^ \to   \cdot \mathop {FE}\limits^ \to   - 2\mathop {BF}\limits^ \to   \cdot \mathop {FE}\limits^ \to   + 2\mathop {FE}\limits^ \to   \cdot \mathop {ED}\limits^ \to   - 2\mathop {FE}\limits^ \to   \cdot \mathop {EA}\limits^ \to  \\
+ &= 4\mathop {FE}\limits^ \to  (\mathop {CF}\limits^ \to   + \mathop {ED}\limits^ \to  )
+\end{align}</script><p>即</p>
+<script type="math/tex; mode=display">\begin{align}
+  \mathop {FE}\limits^ \to   \cdot (\mathop {CF}\limits^ \to   + \mathop {ED}\limits^ \to  ) &= \mathop {FE}\limits^ \to   \cdot (\mathop {CD}\limits^ \to   + \mathop {EF}\limits^ \to  )  \\
+   &= \mathop {FE}\limits^ \to   \cdot \mathop {CD}\limits^ \to   - 1  \\
+   &= \frac{1}{4}  \\ 
+\end{align}</script><p>从而<script type="math/tex">\mathop {FE}\limits^ \to   \cdot \mathop {CD}\limits^ \to   = \frac{5}{4}</script><br>又</p>
+<script type="math/tex; mode=display">\begin{align}
+\mathop {AC}\limits^ \to   \cdot \mathop {BD}\limits^ \to   = n
+ &= (\mathop {AD}\limits^ \to   + \mathop {DC}\limits^ \to  )(\mathop {BC}\limits^ \to   + \mathop {CD}\limits^ \to  )\\
+ &= m + (\mathop {AD}\limits^ \to   - \mathop {BC}\limits^ \to  ) \cdot \mathop {CD}\limits^ \to   - 3\\
+ &= m - 3 + 2(\mathop {EF}\limits^ \to   + \mathop {CD}\limits^ \to  ) \cdot \mathop {CD}\limits^ \to  \\
+ &= m + \frac{1}{2}
+\end{align}</script><p>所以<script type="math/tex">n - m = \frac{1}{2}</script></p>
 
       
 
@@ -479,15 +479,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">向量</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">集合</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">逻辑</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">向量</a>
               </li>
              
               <li class="article-tag-list-item">
